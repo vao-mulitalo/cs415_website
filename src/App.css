@@ -5,12 +5,20 @@
   align-items: top;
   justify-content: center;
   columns: white;
-  background-image: linear-gradient(79deg, #7066f6, #3d78ad 48%, #4df7a2);
+  color: white;
+  background-image: linear-gradient(79deg, #022449, #55BDCA 48%, #46FFFF, #C8EFF9);
 }
 
 .auth-form-container, .login-form, .register-form{
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
+  background-color: #f27d42;
+  margin-top: 20%;
+  margin-left: -30%;
+  margin-right: -30%;
+  padding: 10%;
+  border-radius: 20px;
+  color: white;
 }
 
 .flex-horizontal {
@@ -25,7 +33,7 @@
   height: auto;
 }
 
-.user-table {
+.user-table, .employee-table, .eit-table {
   justify-content: flex-start;
   border-collapse: collapse;
   margin: 25px 0;
@@ -38,14 +46,18 @@
     text-align: center;
 }
 
-.user-table td {
+.user-table td, .eit-table td {
   text-align: center;
   padding: 5px 20px;
 }
 
-.user-table thead th {
+.user-table thead th, .employee-table thead th, .eit-table thead th {
   border-bottom: 2px solid;
   padding: 5px 15px;
+}
+
+.eit-table {
+  background-color: #0023457d;
 }
 
 .hidetext { -webkit-text-security: disc; /* Default */ }
@@ -70,12 +82,16 @@
 }
 
 .login-button {
-  border: none;
-  background-color: white;
-  padding: 20px;
+  border: 2px solid white;
+  background-color: #f27d42;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-radius: 30px;
   cursor: pointer;
-  color: #7066f6;
+  color: white;
+  margin: 20px;
 }
 
 .link-btn {

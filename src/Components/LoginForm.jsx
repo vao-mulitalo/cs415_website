@@ -21,7 +21,7 @@ const LoginForm = (props) => {
           password: pass
       })
       try {
-          fetch('http://localhost:8000/login/',{
+          fetch(process.env.REACT_APP_API_URL_BASE+'/login/',{
           method: 'POST',
           body: payload,
           headers:{
@@ -89,9 +89,9 @@ const LoginForm = (props) => {
     <div >
       <h2>Login</h2>
             <form className="login-form" onSubmit={handleSubmit}>
-                <label className="login-label" htmlFor="email">Email</label>
+                <h3 className="login-label" htmlFor="email">Email</h3>
                 <input className="login-input" required value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="email@email.com" id="email" name="email"/>
-                <label className="login-label" htmlFor="password">Password</label>
+                <h3 className="login-label" htmlFor="password">Password</h3>
                 <input className="login-input" required value={pass} onChange={(e) => setPass(e.target.value)} type="password" placeholder="*********" id="password" name="password"/>
                 <button className="login-button" type="submit">Login</button>
                 <p className="text-success">{error}</p>

@@ -12,6 +12,7 @@ import LandingPage from "./Components/LandingPage";
 import UserProfile from "./Components/UserProfile";
 import UserView from "./Components/UserView";
 import Module from "./Components/Module";
+import EIT from "./Components/Eit";
 import NavbarTop from "./Components/Navbar";
 
 
@@ -46,6 +47,7 @@ function App() {
             <Route path="/users" element={<UserView />} />
             <Route path="/modules/:id" element={<Module />} />
             <Route path="/unauthorized" element={<UnAuthorized />} />
+            <Route path="/eit" element = {<EIT />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
           </div>
