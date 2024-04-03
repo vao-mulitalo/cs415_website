@@ -21,7 +21,7 @@ const LoginForm = (props) => {
           password: pass
       })
       try {
-          fetch(process.env.REACT_APP_API_URL_BASE + '/login/',{
+          fetch('http://localhost:8000/login/',{
           method: 'POST',
           body: payload,
           headers:{
